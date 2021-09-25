@@ -509,6 +509,19 @@ h6 {
     flex-flow: row;
     justify-content: center;
 }
+#img5 {
+    margin-top: 30px;
+    width: 100%;
+    /* background: url("../img/hero-bg3.jpg") top center; */
+    background-size: cover;
+    position: relative;
+    background: top center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+    flex-flow: row;
+    justify-content: center;
+}
 
 #img4 {
     width: 100%;
