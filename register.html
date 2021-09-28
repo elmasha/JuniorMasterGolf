@@ -41,42 +41,23 @@
     <header id="header" class="fixed-top header-inner-pages">
         <div class="container-fluid">
 
-            <div class="row justify-content-center">
-                <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
-                    <a href="index.html">
-                        <img id="img4" src="assets/img/logo.jpg" width="80%" height="50vh" class="d-flex" alt="..."></a>
-                    <!-- Uncomment below if you prefer to use an image logo -->
-                    <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-                    <nav id="navbar" class="navbar order-last order-lg-0">
-                        <!-- <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Advocacy</a></li>
-                        <li><a href="#">Family Support</a></li>
-                    </ul>
+            <nav class="nav">
+                <a href="index.html" class="col-md-2">
+                    <img id="img8" src="assets/img/logo.jpg" width="50%"  height="50vh"  alt="..."></a>
+              </nav>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="register.html" class="get-started-btn scrollto" style="margin: 20px;"><b><strong>Register</strong> </b> </a>
                 </li>
-                <li><a class="nav-link scrollto" href="#services">Resources</a></li>
-                <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
-                <li class="dropdown"><a href="#pricing"><span>Get Involved</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="#pricing">2021 Golf Tournament</a></li>
-                        <li><a href="#pricing">Self Advocacy</a></li>
-                        <li><a href="#pricing">Volunteer</a></li>
-                        <li><a href="#pricing">Advocate</a></li>
-                    </ul>
+              </ul>
+              <ul class="nav justify-content-end">
+                <li class="nav-item"> 
+                    <a href="invitation.html" style="margin: 20px;"><b><strong>Invitation</strong> </b> </a></li>
+                <li class="nav-item">
+                    <a href="tournament.html"  style="margin: 20px;"><b><strong>Tournament details</strong> </b> </a>
                 </li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            </ul> -->
-                        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
-                    </nav>
-                    <!-- .navbar -->
-                    <a href="#" class="get-started-btn scrollto" style="margin-left: 170px;"><b>Register</b> </a>
-                </div>
-            </div>
+                
+              </ul>
 
         </div>
     </header>
@@ -98,7 +79,7 @@
                 <br>
                 <div class="section-title">
                     <h2>Register</h2>
-                    <h5><strong>Golf tournament registration details</strong></h5>
+                    <h5><strong>Personal information field for player.</strong></h5>
                     <!-- <p><b>The Junior Master Golf Series Tournament</b></p>
                     <p>The Junior Master Golf Series Tournament
 
@@ -204,11 +185,226 @@
                                     <input type="text" name="golf" class="form-control" id="golfclub" placeholder="Golf Club/School/Region" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="handicapped" id="handicapped" placeholder="handicapped" required>
+                                    <input type="number" class="form-control" name="handicapped" id="handicapped" placeholder="Handicapped Index" required>
+                                </div>
+                                <br>
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="cdh" class="form-control" name="cdh" id="cdh" placeholder="CDH Id number" required>
+                                </div>
+                                <br>
+                              
+                            </div>
+                            <br>
+                            <div class="row">  <div class="col-md-4 form-group mt-3 mt-md-0">
+                                <input type="number" class="form-control" name="nonhandicapped" id="nonhandicapped" placeholder="Non Handicapped" required>
+                            </div>
+                            <br>
+                            <div class="col-md-4 form-group mt-3 mt-md-0">
+                                <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of birth " required>
+                            </div></div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="number" name="number" class="form-control" id="number" placeholder="Phone number" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
+                                </div>
+                            </div>
+                            <br> 
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <label for="formFile" class="form-label"><strong>Payment Evidence (Mpesa payment details)</strong></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div>
+
+                            </div>
+                            <br>
+                            
+                           
+                           
+                            
+                            <br>
+
+                            <div class="text-center"><button id="submit" type="submit"><b>Register</b></button></div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <div class="container">
+
+                <div class="row mt-5">
+                        <h4><strong>Personal Information fields for Sponsor</strong></h4>
+                        <br>
+                        <br>
+                        <h5><b><u>If individuals</u> </b> </h5>
+                        <br>
+                        <br>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <select class="form-select" aria-label="Default select example">
+                                  <option selected>Select title</option>
+                                  <option value="1">Mr.</option>
+                                  <option value="2">Mrs.</option>
+                                  <option value="2">Ms.</option>
+                                  <option value="2">Mrs. & Mr.</option>
+                                  <option value="3">Dr.</option>
+                                </select>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="address" class="form-control" id="address" placeholder="Address" required>
+                                </div>
+                                <br>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="city" id="city" placeholder="City" required>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input type="text" name="country" class="form-control" id="country" placeholder="Country" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="nonhandicapped" id="nonhandicapped" placeholder="Non Handicapped" required>
+                                    <input type="number" class="form-control" name="code" id="code" placeholder="Postal code" required>
                                 </div>
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="paddress" id="paddress" placeholder="Postal Address" required>
+                                </div>
+                            </div>
+                            <br>
+                            
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input type="text" name="golf" class="form-control" id="golfclub" placeholder="Golf Club/School/Region" required>
+                                </div>
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="Nature of Sponsorship" id="Nature of Sponsorship" placeholder="Nature of Sponsorship" required>
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="number" name="number" class="form-control" id="number" placeholder="Phone number" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="number" name="number" class="form-control" id="number" placeholder="Amount paid/pledged" required>
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="text-center"><button id="submit" type="submit"><b>Register</b></button></div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="container">
+
+                <div class="row mt-5">
+                    
+                        <br>
+                        <br>
+                        <h5><b> <u> If Company</u></b> </h5>
+                        <br>
+                        <br>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <select class="form-select" aria-label="Default select example">
+                                  <option selected>Select title</option>
+                                  <option value="1">Mr.</option>
+                                  <option value="2">Mrs.</option>
+                                  <option value="2">Ms.</option>
+                                  <option value="2">Mrs. & Mr.</option>
+                                  <option value="3">Dr.</option>
+                                </select>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <div class="">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="address" class="form-control" id="address" placeholder="Address" required>
+                                </div>
+                                <br>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="address" id="address2" placeholder="" required>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input type="text" name="country" class="form-control" id="country" placeholder="Country" required>
+                                </div>
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="number" class="form-control" name="code" id="code" placeholder="Postal code" required>
+                                </div>
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="paddress" id="paddress" placeholder="Postal Address" required>
+                                </div>
+                            </div>
+                            <br>
+                            
+                            <br>
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <input type="text" name="golf" class="form-control" id="golfclub" placeholder="Golf Club/School/Region" required>
+                                </div>
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="Nature of Sponsorship" id="Nature of Sponsorship" placeholder="Nature of Sponsorship" required>
+                                </div>
+                                
                             </div>
                             <br>
                             <div class="row">
@@ -221,48 +417,8 @@
                             </div>
                             <br>
                             <br>
-                            <div class="row">
-                                <div class="col-md-4 form-group">
-                                    <label for="formFile" class="form-label"><strong>Attach birth certificates</strong></label>
-                                    <input class="form-control" type="file" id="formFile">
-                                  </div>
-
-                            </div>
-                            <br>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-4 form-group">
-                                    <label for="formFile" class="form-label"><strong>Attach Mpesa Notifications</strong></label>
-                                    <input class="form-control" type="file" id="formFile">
-                                  </div>
-
-                            </div>
-                            <br>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                                        <label class="form-check-label" for="flexCheckIndeterminate">
-                                          Yes! Junior Master Golf Series. may contact me at the email address above.
-                                  </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                                        <label class="form-check-label" for="flexCheckIndeterminate">
-                                          I prefer that this donation remains anonymous.
-                                </label>
-                                    </div>
-                                </div>
-                            </div>
                            
-                            
-                            <br>
+                            <br>                       
 
                             <div class="text-center"><button id="submit" type="submit"><b>Register</b></button></div>
                         </form>
