@@ -524,11 +524,16 @@ h6 {
 }
 
 #img4 {
-    width: 100%;
+    width: 20%;
     background-size: cover;
-    border-radius: 10px;
     position: relative;
-    margin: 8px;
+}
+
+@media (width: 100%) {
+    #img4 {
+        flex: 50%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
