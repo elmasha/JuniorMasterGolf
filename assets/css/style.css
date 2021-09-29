@@ -166,26 +166,26 @@ h6 {
 /* Get Startet Button */
 
 .get-started-btn {
-    margin-left: 25px;
     background: #F7DF00;
     color: #0f0f0f;
     border-radius: 50px;
-    padding: 8px 20px 9px 20px;
+    padding: 8px 10px 9px 10px;
     white-space: nowrap;
     transition: 0.3s;
-    font-size: 14px;
+    font-size: 13px;
     display: inline-block;
 }
 
 .get-started-btn:hover {
     background: #EB1C24;
     color: #fff;
+    font-size: 14px;
 }
 
 @media (max-width: 992px) {
     .get-started-btn {
-        margin: 0 15px 0 0;
-        padding: 6px 15px;
+        margin: 0 8px 0 0;
+        padding: 6px 8px;
     }
 }
 
@@ -531,8 +531,6 @@ h6 {
 
 #img4 {
     width: 20%;
-    background-size: cover;
-    position: relative;
 }
 
 @media (max-width: 200px) {
@@ -543,15 +541,27 @@ h6 {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 2000px) {
     #img1,
     #img2,
     #parallax,
     #img3,
     #imagebody {
-        flex: 50%;
+        flex: 100%;
         width: 100%;
     }
+}
+
+#invite {
+    font-size: 12px;
+}
+
+#details {
+    font-size: 12px;
+}
+
+#register {
+    font-size: 12px;
 }
 
 #hero:before {
