@@ -13,6 +13,9 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+}
+
+p {
     font-size: 18px;
 }
 
@@ -496,7 +499,6 @@ h6 {
     background-size: cover;
 }
 
-
 #img3 {
     margin-top: 30px;
     width: 100%;
@@ -510,6 +512,7 @@ h6 {
     flex-flow: row;
     justify-content: center;
 }
+
 #img5 {
     margin-top: 30px;
     width: 100%;
@@ -523,10 +526,8 @@ h6 {
     flex-flow: row;
     justify-content: center;
 }
-#invite{
-    padding-top: 50px;
-}
 
+#imagebody {}
 
 #img4 {
     width: 20%;
@@ -546,7 +547,8 @@ h6 {
     #img1,
     #img2,
     #parallax,
-    #img3 {
+    #img3,
+    #imagebody {
         flex: 50%;
         width: 100%;
     }

@@ -39,25 +39,21 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-inner-pages">
-        <div class="container-fluid">
 
-            <nav class="nav">
-                <a href="index.html" class="col-md-2">
-                    <img id="img8" src="assets/img/logo.jpg" width="50%"  height="50vh"  alt="..."></a>
-              </nav>
-              <ul class="nav justify-content-end">
+        <div class="container-fluid col-md-12">
+
+            <ul class="nav justify-content-end" style="margin: 10px;">
+
                 <li class="nav-item">
-                    <a href="register.html" class="get-started-btn scrollto" style="margin: 20px;"><b><strong>Register</strong> </b> </a>
-                </li>
-              </ul>
-              <ul class="nav justify-content-end">
-                <li class="nav-item"> 
-                    <a href="invitation.html" style="margin: 20px;"><b><strong>Invitation</strong> </b> </a></li>
+                    <a id="invite" href="invitation.html" class="get-started-btn scrollto" style="margin: 10px;"><b>Invitation </b> </a></li>
                 <li class="nav-item">
-                    <a href="tournament.html"  style="margin: 20px;"><b><strong>Tournament details</strong> </b> </a>
+                    <a id="details" href="tournament.html" class="get-started-btn scrollto" style="margin: 10px;"><b><strong>Tournament details</strong> </b> </a>
                 </li>
-                
-              </ul>
+                <li class="nav-item justify-content-end">
+                    <a href="register.html" class="get-started-btn scrollto" style="margin: 10px;"><b><strong>Register</strong> </b> </a>
+                </li>
+
+            </ul>
 
         </div>
     </header>
@@ -192,16 +188,18 @@
                                     <input type="cdh" class="form-control" name="cdh" id="cdh" placeholder="CDH Id number" required>
                                 </div>
                                 <br>
-                              
+
                             </div>
                             <br>
-                            <div class="row">  <div class="col-md-4 form-group mt-3 mt-md-0">
-                                <input type="number" class="form-control" name="nonhandicapped" id="nonhandicapped" placeholder="Non Handicapped" required>
+                            <div class="row">
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="number" class="form-control" name="nonhandicapped" id="nonhandicapped" placeholder="Non Handicapped" required>
+                                </div>
+                                <br>
+                                <div class="col-md-4 form-group mt-3 mt-md-0">
+                                    <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of birth " required>
+                                </div>
                             </div>
-                            <br>
-                            <div class="col-md-4 form-group mt-3 mt-md-0">
-                                <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of birth " required>
-                            </div></div>
                             <br>
                             <div class="row">
                                 <div class="col-md-6 form-group">
@@ -211,21 +209,21 @@
                                     <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
                                 </div>
                             </div>
-                            <br> 
+                            <br>
                             <br>
                             <br>
                             <div class="row">
                                 <div class="col-md-4 form-group">
                                     <label for="formFile" class="form-label"><strong>Payment Evidence (Mpesa payment details)</strong></label>
                                     <input class="form-control" type="file" id="formFile">
-                                  </div>
+                                </div>
 
                             </div>
                             <br>
-                            
-                           
-                           
-                            
+
+
+
+
                             <br>
 
                             <div class="text-center"><button id="submit" type="submit"><b>Register</b></button></div>
@@ -243,12 +241,12 @@
             <div class="container">
 
                 <div class="row mt-5">
-                        <h4><strong>Personal Information fields for Sponsor</strong></h4>
-                        <br>
-                        <br>
-                        <h5><b><u>If individuals</u> </b> </h5>
-                        <br>
-                        <br>
+                    <h4><strong>Personal Information fields for Sponsor</strong></h4>
+                    <br>
+                    <br>
+                    <h5><b><u>If individuals</u> </b> </h5>
+                    <br>
+                    <br>
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
@@ -272,7 +270,7 @@
                                 <div class="col-md-4 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
                                 </div>
-                                
+
                             </div>
                             <br>
                             <div class="">
@@ -297,7 +295,7 @@
                                 </div>
                             </div>
                             <br>
-                            
+
                             <br>
                             <div class="row">
                                 <div class="col-md-4 form-group">
@@ -306,7 +304,7 @@
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
                                     <input type="text" class="form-control" name="Nature of Sponsorship" id="Nature of Sponsorship" placeholder="Nature of Sponsorship" required>
                                 </div>
-                                
+
                             </div>
                             <br>
                             <div class="row">
@@ -322,7 +320,7 @@
                                 <div class="col-md-6 form-group">
                                     <input type="number" name="number" class="form-control" id="number" placeholder="Amount paid/pledged" required>
                                 </div>
-                                
+
                             </div>
                             <br>
                             <br>
@@ -341,12 +339,12 @@
             <div class="container">
 
                 <div class="row mt-5">
-                    
-                        <br>
-                        <br>
-                        <h5><b> <u> If Company</u></b> </h5>
-                        <br>
-                        <br>
+
+                    <br>
+                    <br>
+                    <h5><b> <u> If Company</u></b> </h5>
+                    <br>
+                    <br>
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
@@ -370,7 +368,7 @@
                                 <div class="col-md-4 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
                                 </div>
-                                
+
                             </div>
                             <br>
                             <div class="">
@@ -395,7 +393,7 @@
                                 </div>
                             </div>
                             <br>
-                            
+
                             <br>
                             <div class="row">
                                 <div class="col-md-4 form-group">
@@ -404,7 +402,7 @@
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
                                     <input type="text" class="form-control" name="Nature of Sponsorship" id="Nature of Sponsorship" placeholder="Nature of Sponsorship" required>
                                 </div>
-                                
+
                             </div>
                             <br>
                             <div class="row">
@@ -417,8 +415,8 @@
                             </div>
                             <br>
                             <br>
-                           
-                            <br>                       
+
+                            <br>
 
                             <div class="text-center"><button id="submit" type="submit"><b>Register</b></button></div>
                         </form>
