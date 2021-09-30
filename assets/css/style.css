@@ -452,6 +452,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #hero {
+    padding: 40px 0;
     width: 100%;
     background-size: cover;
     position: relative;
@@ -711,7 +712,7 @@ h6 {
 --------------------------------------------------------------*/
 
 section {
-    padding: 80px 0;
+    padding: 10px 0;
     overflow: hidden;
 }
 
@@ -1571,6 +1572,20 @@ section {
     color: #fff;
 }
 
+#Upload {
+    background: #F7DF00;
+    border: 0;
+    padding: 10px 30px;
+    color: #0f0f0f;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+#submit:hover {
+    background: #EB1C24;
+    color: #fff;
+}
+
 @-webkit-keyframes animate-loading {
     0% {
         transform: rotate(0deg);
@@ -1663,10 +1678,10 @@ section {
 }
 
 #footer .social-links {
-    margin: 0 0 40px 0;
+    margin: 0 0 10px 0;
 }
 
-#footer .social-links a {
+#footer .social-links a #web {
     font-size: 18px;
     display: inline-block;
     background: #F7DF00;
@@ -1681,7 +1696,28 @@ section {
     transition: 0.3s;
 }
 
-#footer .social-links a:hover {
+#web {
+    font-size: 18px;
+    display: inline-block;
+    background: #F7DF00;
+    color: #0f0f0f;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#web:hover {
+    background: #EB1C24;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .social-links a #web:hover {
     background: #EB1C24;
     color: #fff;
     text-decoration: none;

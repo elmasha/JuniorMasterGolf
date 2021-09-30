@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -134,13 +134,10 @@
 
                             <div class="row">
                                 <div class="col-md-3 form-group">
-                                    <select class="form-select" aria-label="Default select example">
-                                  <option selected>Select title</option>
-                                  <option value="1">Mr.</option>
-                                  <option value="2">Mrs.</option>
-                                  <option value="2">Ms.</option>
-                                  <option value="2">Mrs. & Mr.</option>
-                                  <option value="3">Dr.</option>
+                                    <select class="form-select" id="gender">
+                                  <option selected>Select Gender</option>
+                                  <option value="Male">Male</option>
+                                  <option value="Female">Female</option>
                                 </select>
                                 </div>
 
@@ -148,13 +145,13 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-4 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
+                                    <input type="text" name="name" class="form-control" id="firstname" placeholder="First Name" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Last name" required>
+                                    <input type="text" class="form-control" name="name" id="lastname" placeholder="Last name" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="text" class="form-control" name="family" id="family" placeholder="Family name" required>
+                                    <input type="text" class="form-control" name="name" id="surname" placeholder="Surname" required>
                                 </div>
                             </div>
                             <br>
@@ -162,10 +159,8 @@
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="address" class="form-control" id="address" placeholder="Address" required>
                                 </div>
-                                <br>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="text" class="form-control" name="address" id="address2" placeholder="" required>
-                                </div>
+
+
                             </div>
                             <br>
                             <div class="row">
@@ -185,12 +180,7 @@
                                 <div class="col-md-4 form-group">
                                     <input type="text" name="city" class="form-control" id="city" placeholder="City" required>
                                 </div>
-                                <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="text" class="form-control" name="state" id="state" placeholder="State" required>
-                                </div>
-                                <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="zip" id="zip" placeholder="Zip" required>
-                                </div>
+
                             </div>
                             <br>
 
@@ -203,7 +193,7 @@
                                 </div>
                                 <br>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="cdh" class="form-control" name="cdh" id="cdh" placeholder="CDH Id number" required>
+                                    <input type="number" class="form-control" name="cdh" id="cdh" placeholder="CDH Id number" required>
                                 </div>
                                 <br>
 
@@ -221,19 +211,19 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="number" name="number" class="form-control" id="number" placeholder="Phone number" required>
+                                    <input type="number" name="number" class="form-control" id="phonenumber" placeholder="Phone number" required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
                                     <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
                                 </div>
                             </div>
                             <br>
-                            <br>
-                            <br>
+
                             <div class="row">
                                 <div class="col-md-4 form-group">
-                                    <label for="formFile" class="form-label"><strong>Payment Evidence (Mpesa payment details)</strong></label>
-                                    <input class="form-control" type="file" id="formFile">
+                                    <label for="formFile" class="form-label"><strong>Payment Evidence (Mpesa payment code)</strong></label>
+                                    <input type="number" class="form-control" name="mpesaCode" id="mpesaCode" placeholder="Mpesa code" required>
+
                                 </div>
 
                             </div>
@@ -244,7 +234,7 @@
 
                             <br>
 
-                            <div class="text-center"><button id="submit" type="submit"><b>Register</b></button></div>
+                            <div class="text-center"><button id="Upload" type="submit"><b>Register</b></button></div>
                         </form>
 
                     </div>
@@ -267,11 +257,9 @@
         <div class="container">
             <h3>Junior Master Golf Series</h3>
             <div class="social-links">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a id="web" href="index.html"><i class="ri-global-line"></i></a>
+                <strong><a href="index.html">www.juniormastersport.com</a></strong>
+
             </div>
             <div class="copyright">
                 &copy; Copyright <strong><span>Junior Master Golf Series</span></strong>. All Rights Reserved
@@ -293,6 +281,120 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-storage.js"></script>
+
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBJbpnY9UWSIb0uFX4hm6xtcEXC_llZ1JY",
+            authDomain: "juniormaster-7a751.firebaseapp.com",
+            projectId: "juniormaster-7a751",
+            storageBucket: "juniormaster-7a751.appspot.com",
+            messagingSenderId: "1095870138610",
+            appId: "1:1095870138610:web:e16bd54a5a490fe459e86b",
+            measurementId: "G-WTSBC2BEQT"
+        };
+
+        const app = firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script id="MainScript">
+        var db = firebase.firestore();
+        var firstName, lastName, surName, address, county, postalCode, city, golfClub, handicapped, nonHandicapped,
+            CDHnumber, Dob, phone, email, MpesaNo, postalAddress, gender;
+
+
+        document.getElementById("Upload").onclick = function(e) {
+
+            firstName = document.getElementById("firstname").value;
+            lastName = document.getElementById("lastname").value;
+            surName = document.getElementById("surname").value;
+            address = document.getElementById("address").value;
+            county = document.getElementById("country").value;
+            postalCode = document.getElementById("code").value;
+            postalAddress = document.getElementById("paddress").value;
+            city = document.getElementById("city").value;
+            golfClub = document.getElementById("golfclub").value;
+            handicapped = document.getElementById("handicapped").value;
+            nonHandicapped = document.getElementById("nonhandicapped").value;
+            Dob = document.getElementById("dob").value;
+            phone = document.getElementById("phonenumber").value;
+            email = document.getElementById("email").value;
+            MpesaNo = document.getElementById("mpesaCode").value;
+            CDHnumber = document.getElementById("cdh").value;
+            gender = document.getElementById("gender").value;
+
+            if (firstName == "" | lastName == "" | surName == "" | address == "" |
+                county == "" | postalCode == "" | postalAddress == "" | city == "" |
+                golfClub == "" | handicapped == "" | nonHandicapped == "" | Dob == "" |
+                phone == "" | email == "" | MpesaNo == "" | CDHnumber == "" | gender == "Select Gender") {
+
+                window.alert("Fill all empty fields")
+
+            } else {
+
+
+                db.collection("Tournament_registration").doc(firstName).set({
+                        FirstName: firstName,
+                        LastName: lastName,
+                        SurName: surName,
+                        DOB: Dob,
+                        Address: address,
+                        County: county,
+                        PostalCode: postalCode,
+                        PostalAddress: postalAddress,
+                        City: city,
+                        GolfClub: golfClub,
+                        Handicapped: handicapped,
+                        NonHandicapped: nonHandicapped,
+                        PhoneNumber: phone,
+                        Email: email,
+                        MpesaCode: MpesaNo,
+                        CDH_no: CDHnumber,
+                        Gender: gender
+                    })
+                    .then(function() {
+                        console.log(firstName, " registration successful");
+                        window.alert(firstName, " registration was successful")
+                        firstName = ""
+                        lastName = ""
+                        surName = ""
+                        address = ""
+                        county = ""
+                        postalCode = ""
+                        postalAddress = ""
+                        city = ""
+                        golfClub = ""
+                        handicapped = ""
+                        nonHandicapped = ""
+                        Dob = ""
+                        phone = ""
+                        email = ""
+                        MpesaNo = ""
+                        CDHnumber = ""
+                        gender = ""
+                    })
+                    .catch(function(error) {
+                        console.error("Error writing document: ", error);
+                        window.alert(error)
+                    });
+            }
+
+
+
+        }
+    </script>
 
 </body>
 
