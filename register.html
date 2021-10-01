@@ -140,24 +140,28 @@
                                   <option value="Female">Female</option>
                                 </select>
                                 </div>
-
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-4 form-group">
-                                    <input type="text" name="name" class="form-control" id="firstname" placeholder="First Name" required>
+                                    <label>FirstName</label><br>
+                                    <input type="text" name="name" class="form-control" id="firstname" placeholder="" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="text" class="form-control" name="name" id="lastname" placeholder="Last name" required>
+                                    <label>LastName</label><br>
+                                    <input type="text" class="form-control" name="name" id="lastname" placeholder="" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="text" class="form-control" name="name" id="surname" placeholder="Surname" required>
+                                    <label>SurName</label><br>
+                                    <input type="text" class="form-control" name="name" id="surname" placeholder="" required>
                                 </div>
                             </div>
                             <br>
                             <div class="">
+
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="address" class="form-control" id="address" placeholder="Address" required>
+                                    <label>Address</label><br>
+                                    <input type="text" name="address" class="form-control" id="address" placeholder="" required>
                                 </div>
 
 
@@ -165,20 +169,24 @@
                             <br>
                             <div class="row">
                                 <div class="col-md-4 form-group">
-                                    <input type="text" name="country" class="form-control" id="country" placeholder="Country" required>
+                                    <label>Country</label><br>
+                                    <input type="text" name="country" class="form-control" id="country" placeholder="" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="code" id="code" placeholder="Postal code" required>
+                                    <label>Postal code</label><br>
+                                    <input type="number" class="form-control" name="code" id="code" placeholder="" required>
                                 </div>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="text" class="form-control" name="paddress" id="paddress" placeholder="Postal Address" required>
+                                    <label>Postal Address</label><br>
+                                    <input type="text" class="form-control" name="paddress" id="paddress" placeholder="" required>
                                 </div>
                             </div>
                             <br>
                             <br>
                             <div class="row">
                                 <div class="col-md-4 form-group">
-                                    <input type="text" name="city" class="form-control" id="city" placeholder="City" required>
+                                    <label>City</label><br>
+                                    <input type="text" name="city" class="form-control" id="city" placeholder="" required>
                                 </div>
 
                             </div>
@@ -186,35 +194,44 @@
 
                             <div class="row">
                                 <div class="col-md-4 form-group">
-                                    <input type="text" name="golf" class="form-control" id="golfclub" placeholder="Golf Club/School/Region" required>
-                                </div>
-                                <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="handicapped" id="handicapped" placeholder="Handicapped Index" required>
+                                    <label>Golf Club/School/Region</label><br>
+                                    <input type="text" name="golf" class="form-control" id="golfclub" placeholder="" required>
                                 </div>
                                 <br>
-                                <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="cdh" id="cdh" placeholder="CDH Id number" required>
+                                <div class="col-md-4 form-group mt-3 mt-md-0 form-group">
+                                    <select class="form-select" id="handicapped">
+                                  <option selected>Handicapped/Non Handicapped</option>
+                                  <option id="sect1" value="Handicapped">Handicapped</option>
+                                  <option id="sect2" value="Non Handicapped">Non Handicapped</option>
+                                </select>
+                                </div>
+
+                                <br>
+                                <div id="cdH2" class="col-md-4 form-group mt-3 mt-md-0">
+                                    <label>CDH Id number</label><br>
+                                    <input type="number" class="form-control" name="cdh" id="cdh" placeholder="" required>
                                 </div>
                                 <br>
 
                             </div>
                             <br>
                             <div class="row">
-                                <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="number" class="form-control" name="nonhandicapped" id="nonhandicapped" placeholder="Non Handicapped" required>
-                                </div>
+
                                 <br>
                                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                                    <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of birth " required>
+                                    <label>Date of birth</label><br>
+                                    <input type="date" class="form-control" name="dob" id="dob" placeholder="" required>
                                 </div>
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="number" name="number" class="form-control" id="phonenumber" placeholder="Phone number" required>
+                                    <label>Phone number</label><br>
+                                    <input type="number" name="number" class="form-control" id="phonenumber" placeholder="" required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
+                                    <label>Email address</label><br>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="" required>
                                 </div>
                             </div>
                             <br>
@@ -222,7 +239,7 @@
                             <div class="row">
                                 <div class="col-md-4 form-group">
                                     <label for="formFile" class="form-label"><strong>Payment Evidence (Mpesa payment code)</strong></label>
-                                    <input type="number" class="form-control" name="mpesaCode" id="mpesaCode" placeholder="Mpesa code" required>
+                                    <input type="number" class="form-control" name="mpesaCode" id="mpesaCode" placeholder="" required>
 
                                 </div>
 
@@ -315,6 +332,39 @@
             CDHnumber, Dob, phone, email, MpesaNo, postalAddress, gender;
 
 
+        let toggle = document.querySelector('option');
+        let div = document.getElementById("cdH2");
+        div.style.display == 'none';
+
+
+        toggle.addEventListener('click', () => {
+
+            if (handicapped == 'Handicapped') {
+                if (div.style.display == 'none') {
+                    div.style.display == 'block';
+                } else {
+
+                }
+            }
+        })
+
+        document.getElementById("handicapped").onclick = function() {
+
+            var handi = document.getElementById("handicapped").value;
+            if (handicapped == handi) {
+                if (div.style.display == 'none') {
+                    div.style.display == 'block'
+                } else {
+
+                }
+            }
+
+        }
+
+
+
+
+
         document.getElementById("Upload").onclick = function(e) {
 
             firstName = document.getElementById("firstname").value;
@@ -327,7 +377,6 @@
             city = document.getElementById("city").value;
             golfClub = document.getElementById("golfclub").value;
             handicapped = document.getElementById("handicapped").value;
-            nonHandicapped = document.getElementById("nonhandicapped").value;
             Dob = document.getElementById("dob").value;
             phone = document.getElementById("phonenumber").value;
             email = document.getElementById("email").value;
@@ -337,8 +386,8 @@
 
             if (firstName == "" | lastName == "" | surName == "" | address == "" |
                 county == "" | postalCode == "" | postalAddress == "" | city == "" |
-                golfClub == "" | handicapped == "" | nonHandicapped == "" | Dob == "" |
-                phone == "" | email == "" | MpesaNo == "" | CDHnumber == "" | gender == "Select Gender") {
+                golfClub == "" | Dob == "" |
+                phone == "" | email == "" | MpesaNo == "" | gender == "Select Gender") {
 
                 window.alert("Fill all empty fields")
 
@@ -357,7 +406,6 @@
                         City: city,
                         GolfClub: golfClub,
                         Handicapped: handicapped,
-                        NonHandicapped: nonHandicapped,
                         PhoneNumber: phone,
                         Email: email,
                         MpesaCode: MpesaNo,
@@ -367,24 +415,24 @@
                     .then(function() {
                         var successful = " registration was successful"
                         console.log(firstName, " registration successful");
-                        window.alert(firstName + " " + lastName + successful)
-                        firstName = ""
-                        lastName = ""
-                        surName = ""
-                        address = ""
-                        county = ""
-                        postalCode = ""
-                        postalAddress = ""
-                        city = ""
-                        golfClub = ""
-                        handicapped = ""
-                        nonHandicapped = ""
-                        Dob = ""
-                        phone = ""
-                        email = ""
-                        MpesaNo = ""
-                        CDHnumber = ""
-                        gender = ""
+                        window.alert(firstName + " " + lastName + successful);
+
+                        firstName = "";
+                        lastName = "";
+                        surName = "";
+                        address = "";
+                        county = "";
+                        postalCode = "";
+                        postalAddress = "";
+                        city = "";
+                        golfClub = "";
+                        handicapped = "";
+                        Dob = "";
+                        phone = "";
+                        email = "";
+                        MpesaNo = "";
+                        CDHnumber = "";
+                        gender = "";
                     })
                     .catch(function(error) {
                         console.error("Error writing document: ", error);
