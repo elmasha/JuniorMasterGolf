@@ -295,14 +295,14 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
 
     <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyBJbpnY9UWSIb0uFX4hm6xtcEXC_llZ1JY",
-            authDomain: "juniormaster-7a751.firebaseapp.com",
-            projectId: "juniormaster-7a751",
-            storageBucket: "juniormaster-7a751.appspot.com",
-            messagingSenderId: "1095870138610",
-            appId: "1:1095870138610:web:e16bd54a5a490fe459e86b",
-            measurementId: "G-WTSBC2BEQT"
+        const firebaseConfig = {
+            apiKey: "AIzaSyAjLFOx4TqpO6OankJ28A1ghWnN8Axfa2g",
+            authDomain: "juniormaster-6dd1d.firebaseapp.com",
+            projectId: "juniormaster-6dd1d",
+            storageBucket: "juniormaster-6dd1d.appspot.com",
+            messagingSenderId: "679594181936",
+            appId: "1:679594181936:web:6b83a5eaa6413da8b4f4f5",
+            measurementId: "G-JPGFBGH2KP"
         };
 
         const app = firebase.initializeApp(firebaseConfig);
@@ -344,8 +344,8 @@
 
             } else {
 
-
-                db.collection("Tournament_registration").doc(firstName).set({
+                var doc_id = firstName + " " + lastName;
+                db.collection("Tournament_registration").doc(doc_id).set({
                         FirstName: firstName,
                         LastName: lastName,
                         SurName: surName,
@@ -365,8 +365,9 @@
                         Gender: gender
                     })
                     .then(function() {
+                        var successful = " registration was successful"
                         console.log(firstName, " registration successful");
-                        window.alert(firstName, " registration was successful")
+                        window.alert(firstName + " " + lastName + successful)
                         firstName = ""
                         lastName = ""
                         surName = ""
